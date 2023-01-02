@@ -1,0 +1,107 @@
+body{
+
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(75deg,rgb(157, 248, 248),rgb(243, 243, 243));
+    text-align: center;
+}
+
+#navigation-pane{
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3.5rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 40px;
+    box-shadow: 0 2px 8px rgb(0, 0, 0, 0.2);
+    width: 82%;
+    margin: 1rem auto;
+  
+   
+}
+
+#navigation-pane h2 a{
+
+    text-decoration: none;
+    color: black;
+}
+
+#navigation-list ul{
+
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap:2.5rem;
+    justify-content:space-around;
+    align-items: center;
+    margin-top: 1.6rem;
+    font-weight:00;
+       
+}
+
+#navigation-list ul li:hover{
+
+text-decoration: underline;
+cursor: pointer;
+     
+}
+
+.border{
+
+    border-right: 2px solid rgb(0, 0, 0);
+    padding-right: 2rem;
+}
+
+#main-content{
+
+    font-family: 'Dancing Script', cursive;
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+#main-page{
+
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+    margin: 5rem auto;
+    width: 30%;
+    border-radius: 20px;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 2px 8px rgb(0, 0, 0, 0.2);
+
+}
+
+#main-page button{
+    font-family: inherit;
+    border: none;
+    background-color:rgb(157, 248, 248);
+    padding: 0.7rem 0.9rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgb(0, 0, 0, 0.2);
+    font-size: 1rem;
+    font-weight: bold;
+    width: 30%;
+    margin-left: 20rem;
+     
+}
+
+#main-page button:hover{
+    background-color:rgb(0, 0, 0);
+    color: aliceblue;
+    cursor: pointer;
+
+}
+
+#navigation-list ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+      
+}
+
+#navigation-list ul li a:hover{
+
+text-decoration: underline;
+cursor: pointer;
+  
+    
+}

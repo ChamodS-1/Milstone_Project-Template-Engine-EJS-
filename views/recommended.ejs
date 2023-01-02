@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/recommented.css">
+    <title>Recommented restaurents</title>
+</head>
+<body>
+    
+    <div id="navigation-pane">
+        <h2><a href="/index">eatwell</a></h2>
+        <div id="navigation-list">
+            <ul>
+                <li class="border"><a href="/recommended">browes restaurants</a></li>
+                <li class="border"><a href="/shareRestaurent">share a retaurant</a></li>
+                <li><a href="/about">about EatWell</a></li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <h1 id="main-content">Recommented Restaurents</h1>
+    <p>Find your next favourite restaurents with help of our other users!</p>
+
+    <% if(numberOfRestaurent === 0) { %>
+
+        <p>You don't have any restaurent</p>
+    <%} else { %>
+
+        <p>We have found <%= numberOfRestaurent %> Restaurents</p>
+
+    <ul id="restaurent-item">
+
+        <% for(const key of keys){ %>
+        <li id="restaurent-list">
+    <div id="main-page">
+
+       
+        <h2><%= key.resName %></h2>
+        <p><%= key.rescuisine %></p>
+        <p><%= key.resAddress %></p>
+       <p><b><%= key.resDiscription %></b></p>
+       <div class="restaurent-action">
+        <a href="<%= key.resWeb %>">View Website</a>
+       </div>
+    
+    </div>
+</li>
+
+<% } %>
+</ul>
+
+     <% } %>
+
+</body>
+</html>

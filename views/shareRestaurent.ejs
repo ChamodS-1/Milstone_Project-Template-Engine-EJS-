@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/shreRestaurent.css">
+    <title>Share Resturents</title>
+</head>
+<body>
+    
+    <div id="navigation-pane">
+        <h2><a href="/index">eatwell</a></h2>
+        <div id="navigation-list">
+            <ul>
+                <li class="border"><a href="/recommended">browes restaurants</a></li>
+                <li class="border"><a href="/shareRestaurent">share a retaurant</a></li>
+                <li><a href="/about">about EatWell</a></li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <h1 id="main-content">Share your Favourite Restaurent!</h1>
+
+    <div id="form-data">
+
+        <form action="/shareRestaurent" method="POST">
+            <label for="re-name">Restaurent Name</label>
+            <input type="text" id="re-name" name="resName" required>
+
+            <label for="re-address">Address</label>
+            <input type="text" id="re-address" name="resAddress" required>
+
+            <label for="cuisine">Type of cuisine</label>
+            <input type="text" id="cuisine" name="rescuisine" placeholder="@Mexican" required>
+
+            <label for="re-web">Restaurent Website</label>
+            <input type="text" id="re-web" name="resWeb" required>
+
+            <label for="re-recommand">Why do you recommand it?</label>
+            <textarea id="re-recommand" rows="5" name="resDiscription"></textarea>
+
+            <button type="submit"><b>Share Restaurent</b></button>
+
+
+
+
+
+
+        </form>
+
+    </div>
